@@ -1,0 +1,24 @@
+{
+  "name": "undp-hdi-data-analysis-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haque31/UNDP-HDI-Data-Analysis-Project-on-BD-its-neighbouring-countries.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haque31/UNDP-HDI-Data-Analysis-Project-on-BD-its-neighbouring-countries/issues"
+  },
+  "homepage": "https://github.com/Haque31/UNDP-HDI-Data-Analysis-Project-on-BD-its-neighbouring-countries#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

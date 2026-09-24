@@ -1,0 +1,1804 @@
+{
+  "hdi_trend": [
+    {
+      "iso3": "BGD",
+      "year": 1990,
+      "hdi": 0.397
+    },
+    {
+      "iso3": "CHN",
+      "year": 1990,
+      "hdi": 0.491
+    },
+    {
+      "iso3": "IND",
+      "year": 1990,
+      "hdi": 0.446
+    },
+    {
+      "iso3": "PAK",
+      "year": 1990,
+      "hdi": 0.396
+    },
+    {
+      "iso3": "BGD",
+      "year": 1991,
+      "hdi": 0.395
+    },
+    {
+      "iso3": "CHN",
+      "year": 1991,
+      "hdi": 0.499
+    },
+    {
+      "iso3": "IND",
+      "year": 1991,
+      "hdi": 0.448
+    },
+    {
+      "iso3": "PAK",
+      "year": 1991,
+      "hdi": 0.4
+    },
+    {
+      "iso3": "BGD",
+      "year": 1992,
+      "hdi": 0.411
+    },
+    {
+      "iso3": "CHN",
+      "year": 1992,
+      "hdi": 0.511
+    },
+    {
+      "iso3": "IND",
+      "year": 1992,
+      "hdi": 0.453
+    },
+    {
+      "iso3": "PAK",
+      "year": 1992,
+      "hdi": 0.405
+    },
+    {
+      "iso3": "BGD",
+      "year": 1993,
+      "hdi": 0.419
+    },
+    {
+      "iso3": "CHN",
+      "year": 1993,
+      "hdi": 0.522
+    },
+    {
+      "iso3": "IND",
+      "year": 1993,
+      "hdi": 0.458
+    },
+    {
+      "iso3": "PAK",
+      "year": 1993,
+      "hdi": 0.408
+    },
+    {
+      "iso3": "BGD",
+      "year": 1994,
+      "hdi": 0.426
+    },
+    {
+      "iso3": "CHN",
+      "year": 1994,
+      "hdi": 0.532
+    },
+    {
+      "iso3": "IND",
+      "year": 1994,
+      "hdi": 0.463
+    },
+    {
+      "iso3": "PAK",
+      "year": 1994,
+      "hdi": 0.412
+    },
+    {
+      "iso3": "BGD",
+      "year": 1995,
+      "hdi": 0.434
+    },
+    {
+      "iso3": "CHN",
+      "year": 1995,
+      "hdi": 0.543
+    },
+    {
+      "iso3": "IND",
+      "year": 1995,
+      "hdi": 0.469
+    },
+    {
+      "iso3": "PAK",
+      "year": 1995,
+      "hdi": 0.415
+    },
+    {
+      "iso3": "BGD",
+      "year": 1996,
+      "hdi": 0.442
+    },
+    {
+      "iso3": "CHN",
+      "year": 1996,
+      "hdi": 0.555
+    },
+    {
+      "iso3": "IND",
+      "year": 1996,
+      "hdi": 0.476
+    },
+    {
+      "iso3": "PAK",
+      "year": 1996,
+      "hdi": 0.42
+    },
+    {
+      "iso3": "BGD",
+      "year": 1997,
+      "hdi": 0.451
+    },
+    {
+      "iso3": "CHN",
+      "year": 1997,
+      "hdi": 0.566
+    },
+    {
+      "iso3": "IND",
+      "year": 1997,
+      "hdi": 0.482
+    },
+    {
+      "iso3": "PAK",
+      "year": 1997,
+      "hdi": 0.422
+    },
+    {
+      "iso3": "BGD",
+      "year": 1998,
+      "hdi": 0.459
+    },
+    {
+      "iso3": "CHN",
+      "year": 1998,
+      "hdi": 0.576
+    },
+    {
+      "iso3": "IND",
+      "year": 1998,
+      "hdi": 0.488
+    },
+    {
+      "iso3": "PAK",
+      "year": 1998,
+      "hdi": 0.426
+    },
+    {
+      "iso3": "BGD",
+      "year": 1999,
+      "hdi": 0.468
+    },
+    {
+      "iso3": "CHN",
+      "year": 1999,
+      "hdi": 0.587
+    },
+    {
+      "iso3": "IND",
+      "year": 1999,
+      "hdi": 0.496
+    },
+    {
+      "iso3": "PAK",
+      "year": 1999,
+      "hdi": 0.431
+    },
+    {
+      "iso3": "BGD",
+      "year": 2000,
+      "hdi": 0.477
+    },
+    {
+      "iso3": "CHN",
+      "year": 2000,
+      "hdi": 0.598
+    },
+    {
+      "iso3": "IND",
+      "year": 2000,
+      "hdi": 0.501
+    },
+    {
+      "iso3": "PAK",
+      "year": 2000,
+      "hdi": 0.436
+    },
+    {
+      "iso3": "BGD",
+      "year": 2001,
+      "hdi": 0.486
+    },
+    {
+      "iso3": "CHN",
+      "year": 2001,
+      "hdi": 0.608
+    },
+    {
+      "iso3": "IND",
+      "year": 2001,
+      "hdi": 0.511
+    },
+    {
+      "iso3": "PAK",
+      "year": 2001,
+      "hdi": 0.443
+    },
+    {
+      "iso3": "BGD",
+      "year": 2002,
+      "hdi": 0.494
+    },
+    {
+      "iso3": "CHN",
+      "year": 2002,
+      "hdi": 0.619
+    },
+    {
+      "iso3": "IND",
+      "year": 2002,
+      "hdi": 0.516
+    },
+    {
+      "iso3": "PAK",
+      "year": 2002,
+      "hdi": 0.45
+    },
+    {
+      "iso3": "BGD",
+      "year": 2003,
+      "hdi": 0.503
+    },
+    {
+      "iso3": "CHN",
+      "year": 2003,
+      "hdi": 0.63
+    },
+    {
+      "iso3": "IND",
+      "year": 2003,
+      "hdi": 0.529
+    },
+    {
+      "iso3": "PAK",
+      "year": 2003,
+      "hdi": 0.458
+    },
+    {
+      "iso3": "BGD",
+      "year": 2004,
+      "hdi": 0.511
+    },
+    {
+      "iso3": "CHN",
+      "year": 2004,
+      "hdi": 0.642
+    },
+    {
+      "iso3": "IND",
+      "year": 2004,
+      "hdi": 0.538
+    },
+    {
+      "iso3": "PAK",
+      "year": 2004,
+      "hdi": 0.472
+    },
+    {
+      "iso3": "BGD",
+      "year": 2005,
+      "hdi": 0.52
+    },
+    {
+      "iso3": "CHN",
+      "year": 2005,
+      "hdi": 0.654
+    },
+    {
+      "iso3": "IND",
+      "year": 2005,
+      "hdi": 0.547
+    },
+    {
+      "iso3": "PAK",
+      "year": 2005,
+      "hdi": 0.48
+    },
+    {
+      "iso3": "BGD",
+      "year": 2006,
+      "hdi": 0.527
+    },
+    {
+      "iso3": "CHN",
+      "year": 2006,
+      "hdi": 0.666
+    },
+    {
+      "iso3": "IND",
+      "year": 2006,
+      "hdi": 0.557
+    },
+    {
+      "iso3": "PAK",
+      "year": 2006,
+      "hdi": 0.489
+    },
+    {
+      "iso3": "BGD",
+      "year": 2007,
+      "hdi": 0.534
+    },
+    {
+      "iso3": "CHN",
+      "year": 2007,
+      "hdi": 0.68
+    },
+    {
+      "iso3": "IND",
+      "year": 2007,
+      "hdi": 0.566
+    },
+    {
+      "iso3": "PAK",
+      "year": 2007,
+      "hdi": 0.495
+    },
+    {
+      "iso3": "BGD",
+      "year": 2008,
+      "hdi": 0.538
+    },
+    {
+      "iso3": "CHN",
+      "year": 2008,
+      "hdi": 0.689
+    },
+    {
+      "iso3": "IND",
+      "year": 2008,
+      "hdi": 0.574
+    },
+    {
+      "iso3": "PAK",
+      "year": 2008,
+      "hdi": 0.496
+    },
+    {
+      "iso3": "BGD",
+      "year": 2009,
+      "hdi": 0.551
+    },
+    {
+      "iso3": "CHN",
+      "year": 2009,
+      "hdi": 0.7
+    },
+    {
+      "iso3": "IND",
+      "year": 2009,
+      "hdi": 0.579
+    },
+    {
+      "iso3": "PAK",
+      "year": 2009,
+      "hdi": 0.497
+    },
+    {
+      "iso3": "BGD",
+      "year": 2010,
+      "hdi": 0.561
+    },
+    {
+      "iso3": "CHN",
+      "year": 2010,
+      "hdi": 0.71
+    },
+    {
+      "iso3": "IND",
+      "year": 2010,
+      "hdi": 0.59
+    },
+    {
+      "iso3": "PAK",
+      "year": 2010,
+      "hdi": 0.5
+    },
+    {
+      "iso3": "BGD",
+      "year": 2011,
+      "hdi": 0.572
+    },
+    {
+      "iso3": "CHN",
+      "year": 2011,
+      "hdi": 0.717
+    },
+    {
+      "iso3": "IND",
+      "year": 2011,
+      "hdi": 0.603
+    },
+    {
+      "iso3": "PAK",
+      "year": 2011,
+      "hdi": 0.504
+    },
+    {
+      "iso3": "BGD",
+      "year": 2012,
+      "hdi": 0.583
+    },
+    {
+      "iso3": "CHN",
+      "year": 2012,
+      "hdi": 0.725
+    },
+    {
+      "iso3": "IND",
+      "year": 2012,
+      "hdi": 0.609
+    },
+    {
+      "iso3": "PAK",
+      "year": 2012,
+      "hdi": 0.508
+    },
+    {
+      "iso3": "BGD",
+      "year": 2013,
+      "hdi": 0.589
+    },
+    {
+      "iso3": "CHN",
+      "year": 2013,
+      "hdi": 0.733
+    },
+    {
+      "iso3": "IND",
+      "year": 2013,
+      "hdi": 0.615
+    },
+    {
+      "iso3": "PAK",
+      "year": 2013,
+      "hdi": 0.512
+    },
+    {
+      "iso3": "BGD",
+      "year": 2014,
+      "hdi": 0.6
+    },
+    {
+      "iso3": "CHN",
+      "year": 2014,
+      "hdi": 0.742
+    },
+    {
+      "iso3": "IND",
+      "year": 2014,
+      "hdi": 0.625
+    },
+    {
+      "iso3": "PAK",
+      "year": 2014,
+      "hdi": 0.522
+    },
+    {
+      "iso3": "BGD",
+      "year": 2015,
+      "hdi": 0.621
+    },
+    {
+      "iso3": "CHN",
+      "year": 2015,
+      "hdi": 0.75
+    },
+    {
+      "iso3": "IND",
+      "year": 2015,
+      "hdi": 0.633
+    },
+    {
+      "iso3": "PAK",
+      "year": 2015,
+      "hdi": 0.527
+    },
+    {
+      "iso3": "BGD",
+      "year": 2016,
+      "hdi": 0.632
+    },
+    {
+      "iso3": "CHN",
+      "year": 2016,
+      "hdi": 0.758
+    },
+    {
+      "iso3": "IND",
+      "year": 2016,
+      "hdi": 0.644
+    },
+    {
+      "iso3": "PAK",
+      "year": 2016,
+      "hdi": 0.535
+    },
+    {
+      "iso3": "BGD",
+      "year": 2017,
+      "hdi": 0.633
+    },
+    {
+      "iso3": "CHN",
+      "year": 2017,
+      "hdi": 0.765
+    },
+    {
+      "iso3": "IND",
+      "year": 2017,
+      "hdi": 0.649
+    },
+    {
+      "iso3": "PAK",
+      "year": 2017,
+      "hdi": 0.537
+    },
+    {
+      "iso3": "BGD",
+      "year": 2018,
+      "hdi": 0.646
+    },
+    {
+      "iso3": "CHN",
+      "year": 2018,
+      "hdi": 0.774
+    },
+    {
+      "iso3": "IND",
+      "year": 2018,
+      "hdi": 0.648
+    },
+    {
+      "iso3": "PAK",
+      "year": 2018,
+      "hdi": 0.538
+    },
+    {
+      "iso3": "BGD",
+      "year": 2019,
+      "hdi": 0.656
+    },
+    {
+      "iso3": "CHN",
+      "year": 2019,
+      "hdi": 0.781
+    },
+    {
+      "iso3": "IND",
+      "year": 2019,
+      "hdi": 0.651
+    },
+    {
+      "iso3": "PAK",
+      "year": 2019,
+      "hdi": 0.54
+    },
+    {
+      "iso3": "BGD",
+      "year": 2020,
+      "hdi": 0.663
+    },
+    {
+      "iso3": "CHN",
+      "year": 2020,
+      "hdi": 0.786
+    },
+    {
+      "iso3": "IND",
+      "year": 2020,
+      "hdi": 0.652
+    },
+    {
+      "iso3": "PAK",
+      "year": 2020,
+      "hdi": 0.536
+    },
+    {
+      "iso3": "BGD",
+      "year": 2021,
+      "hdi": 0.663
+    },
+    {
+      "iso3": "CHN",
+      "year": 2021,
+      "hdi": 0.794
+    },
+    {
+      "iso3": "IND",
+      "year": 2021,
+      "hdi": 0.647
+    },
+    {
+      "iso3": "PAK",
+      "year": 2021,
+      "hdi": 0.537
+    },
+    {
+      "iso3": "BGD",
+      "year": 2022,
+      "hdi": 0.68
+    },
+    {
+      "iso3": "CHN",
+      "year": 2022,
+      "hdi": 0.796
+    },
+    {
+      "iso3": "IND",
+      "year": 2022,
+      "hdi": 0.676
+    },
+    {
+      "iso3": "PAK",
+      "year": 2022,
+      "hdi": 0.544
+    },
+    {
+      "iso3": "BGD",
+      "year": 2023,
+      "hdi": 0.685
+    },
+    {
+      "iso3": "CHN",
+      "year": 2023,
+      "hdi": 0.797
+    },
+    {
+      "iso3": "IND",
+      "year": 2023,
+      "hdi": 0.685
+    },
+    {
+      "iso3": "PAK",
+      "year": 2023,
+      "hdi": 0.544
+    }
+  ],
+  "components_2023": [
+    {
+      "iso3": "BGD",
+      "le": 74.672,
+      "eys": 12.31016827,
+      "mys": 6.789999962,
+      "gnipc": 8497.658639
+    },
+    {
+      "iso3": "CHN",
+      "le": 77.953,
+      "eys": 15.4787495,
+      "mys": 8.036181597,
+      "gnipc": 22029.22253
+    },
+    {
+      "iso3": "IND",
+      "le": 72.003,
+      "eys": 12.95454025,
+      "mys": 6.880000114,
+      "gnipc": 9046.756336
+    },
+    {
+      "iso3": "PAK",
+      "le": 67.649,
+      "eys": 7.89510849,
+      "mys": 4.316987038,
+      "gnipc": 5501.132932
+    }
+  ],
+  "inequality_gap": [
+    {
+      "iso3": "BGD",
+      "year": 2010,
+      "hdi": 0.561,
+      "ihdi": 0.385,
+      "loss_pct": 31.37254902
+    },
+    {
+      "iso3": "BGD",
+      "year": 2011,
+      "hdi": 0.572,
+      "ihdi": 0.395,
+      "loss_pct": 30.94405594
+    },
+    {
+      "iso3": "BGD",
+      "year": 2012,
+      "hdi": 0.583,
+      "ihdi": 0.402,
+      "loss_pct": 31.04631218
+    },
+    {
+      "iso3": "BGD",
+      "year": 2013,
+      "hdi": 0.589,
+      "ihdi": 0.407,
+      "loss_pct": 30.89983022
+    },
+    {
+      "iso3": "BGD",
+      "year": 2014,
+      "hdi": 0.6,
+      "ihdi": 0.421,
+      "loss_pct": 29.83333333
+    },
+    {
+      "iso3": "BGD",
+      "year": 2015,
+      "hdi": 0.621,
+      "ihdi": 0.437,
+      "loss_pct": 29.62962963
+    },
+    {
+      "iso3": "BGD",
+      "year": 2016,
+      "hdi": 0.632,
+      "ihdi": 0.435,
+      "loss_pct": 31.17088608
+    },
+    {
+      "iso3": "BGD",
+      "year": 2017,
+      "hdi": 0.633,
+      "ihdi": 0.441,
+      "loss_pct": 30.33175355
+    },
+    {
+      "iso3": "BGD",
+      "year": 2018,
+      "hdi": 0.646,
+      "ihdi": 0.45,
+      "loss_pct": 30.34055728
+    },
+    {
+      "iso3": "BGD",
+      "year": 2019,
+      "hdi": 0.656,
+      "ihdi": 0.455,
+      "loss_pct": 30.6402439
+    },
+    {
+      "iso3": "BGD",
+      "year": 2020,
+      "hdi": 0.663,
+      "ihdi": 0.461,
+      "loss_pct": 30.46757164
+    },
+    {
+      "iso3": "BGD",
+      "year": 2021,
+      "hdi": 0.663,
+      "ihdi": 0.461,
+      "loss_pct": 30.46757164
+    },
+    {
+      "iso3": "BGD",
+      "year": 2022,
+      "hdi": 0.68,
+      "ihdi": 0.479,
+      "loss_pct": 29.55882353
+    },
+    {
+      "iso3": "BGD",
+      "year": 2023,
+      "hdi": 0.685,
+      "ihdi": 0.482,
+      "loss_pct": 29.6350365
+    },
+    {
+      "iso3": "CHN",
+      "year": 2010,
+      "hdi": 0.71,
+      "ihdi": null,
+      "loss_pct": null
+    },
+    {
+      "iso3": "CHN",
+      "year": 2011,
+      "hdi": 0.717,
+      "ihdi": null,
+      "loss_pct": null
+    },
+    {
+      "iso3": "CHN",
+      "year": 2012,
+      "hdi": 0.725,
+      "ihdi": null,
+      "loss_pct": null
+    },
+    {
+      "iso3": "CHN",
+      "year": 2013,
+      "hdi": 0.733,
+      "ihdi": 0.603,
+      "loss_pct": 17.73533424
+    },
+    {
+      "iso3": "CHN",
+      "year": 2014,
+      "hdi": 0.742,
+      "ihdi": 0.619,
+      "loss_pct": 16.57681941
+    },
+    {
+      "iso3": "CHN",
+      "year": 2015,
+      "hdi": 0.75,
+      "ihdi": 0.622,
+      "loss_pct": 17.06666667
+    },
+    {
+      "iso3": "CHN",
+      "year": 2016,
+      "hdi": 0.758,
+      "ihdi": 0.628,
+      "loss_pct": 17.15039578
+    },
+    {
+      "iso3": "CHN",
+      "year": 2017,
+      "hdi": 0.765,
+      "ihdi": 0.633,
+      "loss_pct": 17.25490196
+    },
+    {
+      "iso3": "CHN",
+      "year": 2018,
+      "hdi": 0.774,
+      "ihdi": 0.643,
+      "loss_pct": 16.9250646
+    },
+    {
+      "iso3": "CHN",
+      "year": 2019,
+      "hdi": 0.781,
+      "ihdi": 0.653,
+      "loss_pct": 16.38924456
+    },
+    {
+      "iso3": "CHN",
+      "year": 2020,
+      "hdi": 0.786,
+      "ihdi": 0.658,
+      "loss_pct": 16.28498728
+    },
+    {
+      "iso3": "CHN",
+      "year": 2021,
+      "hdi": 0.794,
+      "ihdi": 0.667,
+      "loss_pct": 15.99496222
+    },
+    {
+      "iso3": "CHN",
+      "year": 2022,
+      "hdi": 0.796,
+      "ihdi": 0.669,
+      "loss_pct": 15.95477387
+    },
+    {
+      "iso3": "CHN",
+      "year": 2023,
+      "hdi": 0.797,
+      "ihdi": 0.67,
+      "loss_pct": 15.93475533
+    },
+    {
+      "iso3": "IND",
+      "year": 2010,
+      "hdi": 0.59,
+      "ihdi": 0.381,
+      "loss_pct": 35.42372881
+    },
+    {
+      "iso3": "IND",
+      "year": 2011,
+      "hdi": 0.603,
+      "ihdi": 0.391,
+      "loss_pct": 35.15754561
+    },
+    {
+      "iso3": "IND",
+      "year": 2012,
+      "hdi": 0.609,
+      "ihdi": 0.394,
+      "loss_pct": 35.30377668
+    },
+    {
+      "iso3": "IND",
+      "year": 2013,
+      "hdi": 0.615,
+      "ihdi": 0.399,
+      "loss_pct": 35.12195122
+    },
+    {
+      "iso3": "IND",
+      "year": 2014,
+      "hdi": 0.625,
+      "ihdi": 0.407,
+      "loss_pct": 34.88
+    },
+    {
+      "iso3": "IND",
+      "year": 2015,
+      "hdi": 0.633,
+      "ihdi": 0.423,
+      "loss_pct": 33.17535545
+    },
+    {
+      "iso3": "IND",
+      "year": 2016,
+      "hdi": 0.644,
+      "ihdi": 0.434,
+      "loss_pct": 32.60869565
+    },
+    {
+      "iso3": "IND",
+      "year": 2017,
+      "hdi": 0.649,
+      "ihdi": 0.438,
+      "loss_pct": 32.51155624
+    },
+    {
+      "iso3": "IND",
+      "year": 2018,
+      "hdi": 0.648,
+      "ihdi": 0.436,
+      "loss_pct": 32.71604938
+    },
+    {
+      "iso3": "IND",
+      "year": 2019,
+      "hdi": 0.651,
+      "ihdi": 0.445,
+      "loss_pct": 31.64362519
+    },
+    {
+      "iso3": "IND",
+      "year": 2020,
+      "hdi": 0.652,
+      "ihdi": 0.444,
+      "loss_pct": 31.90184049
+    },
+    {
+      "iso3": "IND",
+      "year": 2021,
+      "hdi": 0.647,
+      "ihdi": 0.443,
+      "loss_pct": 31.5301391
+    },
+    {
+      "iso3": "IND",
+      "year": 2022,
+      "hdi": 0.676,
+      "ihdi": 0.468,
+      "loss_pct": 30.76923077
+    },
+    {
+      "iso3": "IND",
+      "year": 2023,
+      "hdi": 0.685,
+      "ihdi": 0.475,
+      "loss_pct": 30.65693431
+    },
+    {
+      "iso3": "PAK",
+      "year": 2010,
+      "hdi": 0.5,
+      "ihdi": 0.32,
+      "loss_pct": 36.0
+    },
+    {
+      "iso3": "PAK",
+      "year": 2011,
+      "hdi": 0.504,
+      "ihdi": 0.325,
+      "loss_pct": 35.51587302
+    },
+    {
+      "iso3": "PAK",
+      "year": 2012,
+      "hdi": 0.508,
+      "ihdi": 0.329,
+      "loss_pct": 35.23622047
+    },
+    {
+      "iso3": "PAK",
+      "year": 2013,
+      "hdi": 0.512,
+      "ihdi": 0.332,
+      "loss_pct": 35.15625
+    },
+    {
+      "iso3": "PAK",
+      "year": 2014,
+      "hdi": 0.522,
+      "ihdi": 0.339,
+      "loss_pct": 35.05747126
+    },
+    {
+      "iso3": "PAK",
+      "year": 2015,
+      "hdi": 0.527,
+      "ihdi": 0.344,
+      "loss_pct": 34.72485769
+    },
+    {
+      "iso3": "PAK",
+      "year": 2016,
+      "hdi": 0.535,
+      "ihdi": 0.348,
+      "loss_pct": 34.95327103
+    },
+    {
+      "iso3": "PAK",
+      "year": 2017,
+      "hdi": 0.537,
+      "ihdi": 0.351,
+      "loss_pct": 34.63687151
+    },
+    {
+      "iso3": "PAK",
+      "year": 2018,
+      "hdi": 0.538,
+      "ihdi": 0.353,
+      "loss_pct": 34.3866171
+    },
+    {
+      "iso3": "PAK",
+      "year": 2019,
+      "hdi": 0.54,
+      "ihdi": 0.358,
+      "loss_pct": 33.7037037
+    },
+    {
+      "iso3": "PAK",
+      "year": 2020,
+      "hdi": 0.536,
+      "ihdi": 0.357,
+      "loss_pct": 33.39552239
+    },
+    {
+      "iso3": "PAK",
+      "year": 2021,
+      "hdi": 0.537,
+      "ihdi": 0.358,
+      "loss_pct": 33.33333333
+    },
+    {
+      "iso3": "PAK",
+      "year": 2022,
+      "hdi": 0.544,
+      "ihdi": 0.364,
+      "loss_pct": 33.08823529
+    },
+    {
+      "iso3": "PAK",
+      "year": 2023,
+      "hdi": 0.544,
+      "ihdi": 0.364,
+      "loss_pct": 33.08823529
+    }
+  ],
+  "gii_trend": [
+    {
+      "iso3": "BGD",
+      "year": 1990,
+      "gii": 0.7
+    },
+    {
+      "iso3": "CHN",
+      "year": 1990,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1990,
+      "gii": 0.697
+    },
+    {
+      "iso3": "PAK",
+      "year": 1990,
+      "gii": 0.8
+    },
+    {
+      "iso3": "BGD",
+      "year": 1991,
+      "gii": 0.696
+    },
+    {
+      "iso3": "CHN",
+      "year": 1991,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1991,
+      "gii": 0.698
+    },
+    {
+      "iso3": "PAK",
+      "year": 1991,
+      "gii": 0.785
+    },
+    {
+      "iso3": "BGD",
+      "year": 1992,
+      "gii": 0.69
+    },
+    {
+      "iso3": "CHN",
+      "year": 1992,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1992,
+      "gii": 0.7
+    },
+    {
+      "iso3": "PAK",
+      "year": 1992,
+      "gii": 0.787
+    },
+    {
+      "iso3": "BGD",
+      "year": 1993,
+      "gii": 0.688
+    },
+    {
+      "iso3": "CHN",
+      "year": 1993,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1993,
+      "gii": 0.702
+    },
+    {
+      "iso3": "PAK",
+      "year": 1993,
+      "gii": 0.786
+    },
+    {
+      "iso3": "BGD",
+      "year": 1994,
+      "gii": 0.685
+    },
+    {
+      "iso3": "CHN",
+      "year": 1994,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1994,
+      "gii": 0.702
+    },
+    {
+      "iso3": "PAK",
+      "year": 1994,
+      "gii": 0.783
+    },
+    {
+      "iso3": "BGD",
+      "year": 1995,
+      "gii": 0.683
+    },
+    {
+      "iso3": "CHN",
+      "year": 1995,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1995,
+      "gii": 0.702
+    },
+    {
+      "iso3": "PAK",
+      "year": 1995,
+      "gii": 0.789
+    },
+    {
+      "iso3": "BGD",
+      "year": 1996,
+      "gii": 0.682
+    },
+    {
+      "iso3": "CHN",
+      "year": 1996,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1996,
+      "gii": 0.697
+    },
+    {
+      "iso3": "PAK",
+      "year": 1996,
+      "gii": 0.782
+    },
+    {
+      "iso3": "BGD",
+      "year": 1997,
+      "gii": 0.67
+    },
+    {
+      "iso3": "CHN",
+      "year": 1997,
+      "gii": null
+    },
+    {
+      "iso3": "IND",
+      "year": 1997,
+      "gii": 0.692
+    },
+    {
+      "iso3": "PAK",
+      "year": 1997,
+      "gii": 0.773
+    },
+    {
+      "iso3": "BGD",
+      "year": 1998,
+      "gii": 0.659
+    },
+    {
+      "iso3": "CHN",
+      "year": 1998,
+      "gii": 0.207
+    },
+    {
+      "iso3": "IND",
+      "year": 1998,
+      "gii": 0.682
+    },
+    {
+      "iso3": "PAK",
+      "year": 1998,
+      "gii": 0.778
+    },
+    {
+      "iso3": "BGD",
+      "year": 1999,
+      "gii": 0.65
+    },
+    {
+      "iso3": "CHN",
+      "year": 1999,
+      "gii": 0.228
+    },
+    {
+      "iso3": "IND",
+      "year": 1999,
+      "gii": 0.676
+    },
+    {
+      "iso3": "PAK",
+      "year": 1999,
+      "gii": 0.772
+    },
+    {
+      "iso3": "BGD",
+      "year": 2000,
+      "gii": 0.648
+    },
+    {
+      "iso3": "CHN",
+      "year": 2000,
+      "gii": 0.224
+    },
+    {
+      "iso3": "IND",
+      "year": 2000,
+      "gii": 0.671
+    },
+    {
+      "iso3": "PAK",
+      "year": 2000,
+      "gii": 0.768
+    },
+    {
+      "iso3": "BGD",
+      "year": 2001,
+      "gii": 0.657
+    },
+    {
+      "iso3": "CHN",
+      "year": 2001,
+      "gii": 0.215
+    },
+    {
+      "iso3": "IND",
+      "year": 2001,
+      "gii": 0.65
+    },
+    {
+      "iso3": "PAK",
+      "year": 2001,
+      "gii": 0.763
+    },
+    {
+      "iso3": "BGD",
+      "year": 2002,
+      "gii": 0.728
+    },
+    {
+      "iso3": "CHN",
+      "year": 2002,
+      "gii": 0.213
+    },
+    {
+      "iso3": "IND",
+      "year": 2002,
+      "gii": 0.643
+    },
+    {
+      "iso3": "PAK",
+      "year": 2002,
+      "gii": 0.758
+    },
+    {
+      "iso3": "BGD",
+      "year": 2003,
+      "gii": 0.745
+    },
+    {
+      "iso3": "CHN",
+      "year": 2003,
+      "gii": 0.205
+    },
+    {
+      "iso3": "IND",
+      "year": 2003,
+      "gii": 0.637
+    },
+    {
+      "iso3": "PAK",
+      "year": 2003,
+      "gii": 0.657
+    },
+    {
+      "iso3": "BGD",
+      "year": 2004,
+      "gii": 0.739
+    },
+    {
+      "iso3": "CHN",
+      "year": 2004,
+      "gii": 0.204
+    },
+    {
+      "iso3": "IND",
+      "year": 2004,
+      "gii": 0.629
+    },
+    {
+      "iso3": "PAK",
+      "year": 2004,
+      "gii": 0.648
+    },
+    {
+      "iso3": "BGD",
+      "year": 2005,
+      "gii": 0.654
+    },
+    {
+      "iso3": "CHN",
+      "year": 2005,
+      "gii": 0.21
+    },
+    {
+      "iso3": "IND",
+      "year": 2005,
+      "gii": 0.615
+    },
+    {
+      "iso3": "PAK",
+      "year": 2005,
+      "gii": 0.644
+    },
+    {
+      "iso3": "BGD",
+      "year": 2006,
+      "gii": 0.646
+    },
+    {
+      "iso3": "CHN",
+      "year": 2006,
+      "gii": 0.223
+    },
+    {
+      "iso3": "IND",
+      "year": 2006,
+      "gii": 0.601
+    },
+    {
+      "iso3": "PAK",
+      "year": 2006,
+      "gii": 0.623
+    },
+    {
+      "iso3": "BGD",
+      "year": 2007,
+      "gii": 0.645
+    },
+    {
+      "iso3": "CHN",
+      "year": 2007,
+      "gii": 0.221
+    },
+    {
+      "iso3": "IND",
+      "year": 2007,
+      "gii": 0.594
+    },
+    {
+      "iso3": "PAK",
+      "year": 2007,
+      "gii": 0.618
+    },
+    {
+      "iso3": "BGD",
+      "year": 2008,
+      "gii": 0.673
+    },
+    {
+      "iso3": "CHN",
+      "year": 2008,
+      "gii": 0.23
+    },
+    {
+      "iso3": "IND",
+      "year": 2008,
+      "gii": 0.596
+    },
+    {
+      "iso3": "PAK",
+      "year": 2008,
+      "gii": 0.608
+    },
+    {
+      "iso3": "BGD",
+      "year": 2009,
+      "gii": 0.615
+    },
+    {
+      "iso3": "CHN",
+      "year": 2009,
+      "gii": 0.227
+    },
+    {
+      "iso3": "IND",
+      "year": 2009,
+      "gii": 0.58
+    },
+    {
+      "iso3": "PAK",
+      "year": 2009,
+      "gii": 0.603
+    },
+    {
+      "iso3": "BGD",
+      "year": 2010,
+      "gii": 0.603
+    },
+    {
+      "iso3": "CHN",
+      "year": 2010,
+      "gii": 0.226
+    },
+    {
+      "iso3": "IND",
+      "year": 2010,
+      "gii": 0.566
+    },
+    {
+      "iso3": "PAK",
+      "year": 2010,
+      "gii": 0.595
+    },
+    {
+      "iso3": "BGD",
+      "year": 2011,
+      "gii": 0.597
+    },
+    {
+      "iso3": "CHN",
+      "year": 2011,
+      "gii": 0.232
+    },
+    {
+      "iso3": "IND",
+      "year": 2011,
+      "gii": 0.561
+    },
+    {
+      "iso3": "PAK",
+      "year": 2011,
+      "gii": 0.59
+    },
+    {
+      "iso3": "BGD",
+      "year": 2012,
+      "gii": 0.583
+    },
+    {
+      "iso3": "CHN",
+      "year": 2012,
+      "gii": 0.227
+    },
+    {
+      "iso3": "IND",
+      "year": 2012,
+      "gii": 0.557
+    },
+    {
+      "iso3": "PAK",
+      "year": 2012,
+      "gii": 0.583
+    },
+    {
+      "iso3": "BGD",
+      "year": 2013,
+      "gii": 0.578
+    },
+    {
+      "iso3": "CHN",
+      "year": 2013,
+      "gii": 0.217
+    },
+    {
+      "iso3": "IND",
+      "year": 2013,
+      "gii": 0.55
+    },
+    {
+      "iso3": "PAK",
+      "year": 2013,
+      "gii": 0.576
+    },
+    {
+      "iso3": "BGD",
+      "year": 2014,
+      "gii": 0.569
+    },
+    {
+      "iso3": "CHN",
+      "year": 2014,
+      "gii": 0.21
+    },
+    {
+      "iso3": "IND",
+      "year": 2014,
+      "gii": 0.528
+    },
+    {
+      "iso3": "PAK",
+      "year": 2014,
+      "gii": 0.572
+    },
+    {
+      "iso3": "BGD",
+      "year": 2015,
+      "gii": 0.563
+    },
+    {
+      "iso3": "CHN",
+      "year": 2015,
+      "gii": 0.202
+    },
+    {
+      "iso3": "IND",
+      "year": 2015,
+      "gii": 0.496
+    },
+    {
+      "iso3": "PAK",
+      "year": 2015,
+      "gii": 0.563
+    },
+    {
+      "iso3": "BGD",
+      "year": 2016,
+      "gii": 0.557
+    },
+    {
+      "iso3": "CHN",
+      "year": 2016,
+      "gii": 0.192
+    },
+    {
+      "iso3": "IND",
+      "year": 2016,
+      "gii": 0.484
+    },
+    {
+      "iso3": "PAK",
+      "year": 2016,
+      "gii": 0.563
+    },
+    {
+      "iso3": "BGD",
+      "year": 2017,
+      "gii": 0.541
+    },
+    {
+      "iso3": "CHN",
+      "year": 2017,
+      "gii": 0.181
+    },
+    {
+      "iso3": "IND",
+      "year": 2017,
+      "gii": 0.488
+    },
+    {
+      "iso3": "PAK",
+      "year": 2017,
+      "gii": 0.559
+    },
+    {
+      "iso3": "BGD",
+      "year": 2018,
+      "gii": 0.532
+    },
+    {
+      "iso3": "CHN",
+      "year": 2018,
+      "gii": 0.163
+    },
+    {
+      "iso3": "IND",
+      "year": 2018,
+      "gii": 0.487
+    },
+    {
+      "iso3": "PAK",
+      "year": 2018,
+      "gii": 0.563
+    },
+    {
+      "iso3": "BGD",
+      "year": 2019,
+      "gii": 0.52
+    },
+    {
+      "iso3": "CHN",
+      "year": 2019,
+      "gii": 0.159
+    },
+    {
+      "iso3": "IND",
+      "year": 2019,
+      "gii": 0.464
+    },
+    {
+      "iso3": "PAK",
+      "year": 2019,
+      "gii": 0.555
+    },
+    {
+      "iso3": "BGD",
+      "year": 2020,
+      "gii": 0.5
+    },
+    {
+      "iso3": "CHN",
+      "year": 2020,
+      "gii": 0.154
+    },
+    {
+      "iso3": "IND",
+      "year": 2020,
+      "gii": 0.441
+    },
+    {
+      "iso3": "PAK",
+      "year": 2020,
+      "gii": 0.544
+    },
+    {
+      "iso3": "BGD",
+      "year": 2021,
+      "gii": 0.494
+    },
+    {
+      "iso3": "CHN",
+      "year": 2021,
+      "gii": 0.145
+    },
+    {
+      "iso3": "IND",
+      "year": 2021,
+      "gii": 0.438
+    },
+    {
+      "iso3": "PAK",
+      "year": 2021,
+      "gii": 0.541
+    },
+    {
+      "iso3": "BGD",
+      "year": 2022,
+      "gii": 0.487
+    },
+    {
+      "iso3": "CHN",
+      "year": 2022,
+      "gii": 0.138
+    },
+    {
+      "iso3": "IND",
+      "year": 2022,
+      "gii": 0.427
+    },
+    {
+      "iso3": "PAK",
+      "year": 2022,
+      "gii": 0.538
+    },
+    {
+      "iso3": "BGD",
+      "year": 2023,
+      "gii": 0.487
+    },
+    {
+      "iso3": "CHN",
+      "year": 2023,
+      "gii": 0.132
+    },
+    {
+      "iso3": "IND",
+      "year": 2023,
+      "gii": 0.403
+    },
+    {
+      "iso3": "PAK",
+      "year": 2023,
+      "gii": 0.536
+    }
+  ],
+  "historical_markers": [
+    {
+      "year": 1971,
+      "label": "Bangladesh independence"
+    },
+    {
+      "year": 1978,
+      "label": "China economic reforms begin"
+    },
+    {
+      "year": 1991,
+      "label": "India economic liberalization"
+    }
+  ]
+}

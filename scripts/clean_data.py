@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 
-COUNTRIES = ["BGD", "IND"]
+COUNTRIES = ["BGD", "IND", "PAK", "CHN"]
 CORE_YEARS = range(1990, 2024)
 INEQUALITY_YEARS = range(2010, 2024)
 
@@ -19,7 +19,7 @@ def hdi_trend(data):
     )
     long_data["year"] = long_data["indicator_year"].str.rsplit(
         "_", n=1).str[1].astype(int)
-    return long_data[["iso3", "year", "hdi"]].astype({"hdi": float}).to_dict("records")
+    return json_records(long_data[["iso3", "year", "hdi"]])
 
 
 def components_2023(data):
@@ -32,7 +32,7 @@ def components_2023(data):
             "gnipc_2023": "gnipc",
         }
     )
-    return result.astype({"le": float, "eys": float, "mys": float, "gnipc": float}).to_dict("records")
+    return json_records(result)
 
 
 def inequality_gap(data):
@@ -44,11 +44,11 @@ def inequality_gap(data):
                     "iso3": row["iso3"],
                     "year": year,
                     "hdi": float(row[f"hdi_{year}"]),
-                    "ihdi": float(row[f"ihdi_{year}"]),
-                    "loss_pct": float(row[f"loss_{year}"]),
+                    "ihdi": row[f"ihdi_{year}"],
+                    "loss_pct": row[f"loss_{year}"],
                 }
             )
-    return records
+    return json_records(pd.DataFrame(records))
 
 
 def gii_trend(data):
@@ -61,14 +61,25 @@ def gii_trend(data):
     )
     long_data["year"] = long_data["indicator_year"].str.rsplit(
         "_", n=1).str[1].astype(int)
-    return long_data[["iso3", "year", "gii"]].astype({"gii": float}).to_dict("records")
+    return json_records(long_data[["iso3", "year", "gii"]])
+
+
+def json_records(data):
+    records = data.to_dict("records")
+    return [
+        {
+            key: None if pd.isna(value) else value
+            for key, value in record.items()
+        }
+        for record in records
+    ]
 
 
 def main():
     project_root = Path(__file__).resolve().parent.parent
     input_path = project_root / "data" / "raw" / \
         "HDR25_Composite_indices_complete_time_series.csv"
-    output_path = project_root / "data" / "clean" / "hdi_bgd_ind.json"
+    output_path = project_root / "data" / "clean" / "hdi_4country.json"
 
     data = pd.read_csv(input_path, encoding="latin1")
     data = data[data["iso3"].isin(COUNTRIES)].copy()
@@ -108,6 +119,11 @@ def main():
         "components_2023": components_2023(data),
         "inequality_gap": inequality_gap(data),
         "gii_trend": gii_trend(data),
+        "historical_markers": [
+            {"year": 1971, "label": "Bangladesh independence"},
+            {"year": 1978, "label": "China economic reforms begin"},
+            {"year": 1991, "label": "India economic liberalization"},
+        ],
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
