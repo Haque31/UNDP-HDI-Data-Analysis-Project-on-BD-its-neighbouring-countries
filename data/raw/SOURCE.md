@@ -1,1 +1,0 @@
-Source: UNDP Human Development Report 2025 (HDR25) composite indices and metadata.

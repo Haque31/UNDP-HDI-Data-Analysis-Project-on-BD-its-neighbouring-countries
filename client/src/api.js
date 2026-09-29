@@ -1,31 +1,10 @@
-const API_BASE_URL = "/api";
-
-export async function getCountries() {
-    const response = await fetch(`${API_BASE_URL}/countries`);
+async function getJson(endpoint, signal) {
+    const response = await fetch(`/api/${endpoint}`, { signal });
     if (!response.ok) throw new Error(`Request failed: ${response.status}`);
     return response.json();
 }
 
-export async function getHdiTrend() {
-    const response = await fetch(`${API_BASE_URL}/hdi-trend`);
-    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-    return response.json();
-}
-
-export async function getComponents() {
-    const response = await fetch(`${API_BASE_URL}/components`);
-    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-    return response.json();
-}
-
-export async function getInequalityGap() {
-    const response = await fetch(`${API_BASE_URL}/inequality-gap`);
-    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-    return response.json();
-}
-
-export async function getGiiTrend() {
-    const response = await fetch(`${API_BASE_URL}/gii-trend`);
-    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-    return response.json();
-}
+export const getHdiTrend = (signal) => getJson("hdi-trend", signal);
+export const getComponents = (signal) => getJson("components", signal);
+export const getInequalityGap = (signal) => getJson("inequality-gap", signal);
+export const getGiiTrend = (signal) => getJson("gii-trend", signal);

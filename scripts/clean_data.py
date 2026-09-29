@@ -9,17 +9,17 @@ CORE_YEARS = range(1990, 2024)
 INEQUALITY_YEARS = range(2010, 2024)
 
 
-def hdi_trend(data):
-    columns = [f"hdi_{year}" for year in CORE_YEARS]
+def indicator_trend(data, indicator):
+    columns = [f"{indicator}_{year}" for year in CORE_YEARS]
     long_data = data.melt(
         id_vars="iso3",
         value_vars=columns,
         var_name="indicator_year",
-        value_name="hdi",
+        value_name=indicator,
     )
     long_data["year"] = long_data["indicator_year"].str.rsplit(
         "_", n=1).str[1].astype(int)
-    return json_records(long_data[["iso3", "year", "hdi"]])
+    return json_records(long_data[["iso3", "year", indicator]])
 
 
 def components_2023(data):
@@ -51,19 +51,6 @@ def inequality_gap(data):
     return json_records(pd.DataFrame(records))
 
 
-def gii_trend(data):
-    columns = [f"gii_{year}" for year in CORE_YEARS]
-    long_data = data.melt(
-        id_vars="iso3",
-        value_vars=columns,
-        var_name="indicator_year",
-        value_name="gii",
-    )
-    long_data["year"] = long_data["indicator_year"].str.rsplit(
-        "_", n=1).str[1].astype(int)
-    return json_records(long_data[["iso3", "year", "gii"]])
-
-
 def json_records(data):
     records = data.to_dict("records")
     return [
@@ -83,6 +70,8 @@ def main():
 
     data = pd.read_csv(input_path, encoding="latin1")
     data = data[data["iso3"].isin(COUNTRIES)].copy()
+    if set(data["iso3"]) != set(COUNTRIES) or data["iso3"].duplicated().any():
+        raise ValueError("Expected exactly one source row for each selected country")
 
     required_columns = {"iso3", "country"}
     required_columns.update(f"hdi_{year}" for year in CORE_YEARS)
@@ -115,10 +104,10 @@ def main():
     print(f"Max absolute loss difference: {max_difference}")
 
     result = {
-        "hdi_trend": hdi_trend(data),
+        "hdi_trend": indicator_trend(data, "hdi"),
         "components_2023": components_2023(data),
         "inequality_gap": inequality_gap(data),
-        "gii_trend": gii_trend(data),
+        "gii_trend": indicator_trend(data, "gii"),
         "historical_markers": [
             {"year": 1971, "label": "Bangladesh independence"},
             {"year": 1978, "label": "China economic reforms begin"},
@@ -126,7 +115,7 @@ def main():
         ],
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    output_path.write_text(json.dumps(result, indent=2, allow_nan=False), encoding="utf-8")
 
 
 if __name__ == "__main__":

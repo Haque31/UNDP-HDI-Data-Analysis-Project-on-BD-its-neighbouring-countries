@@ -1,3 +1,5 @@
+import { pivotByYear } from "./chartData";
+import TrendTooltip from "./TrendTooltip";
 import {
     CartesianGrid,
     Label,
@@ -9,43 +11,14 @@ import {
     XAxis,
     YAxis,
 } from "recharts";
-import "./InequalityGapChart.css";
-import { COLORS, COUNTRIES, formatLossPercentage, sortTooltipPayload } from "./chartConstants";
-
-function pivotInequalityGap(inequalityGap) {
-    const rowsByYear = new Map();
-    inequalityGap.forEach(({ iso3, year, loss_pct }) => {
-        if (!rowsByYear.has(year)) rowsByYear.set(year, { year });
-        rowsByYear.get(year)[iso3] = loss_pct;
-    });
-    return [...rowsByYear.values()].sort((first, second) => first.year - second.year);
-}
-
-function InequalityGapTooltip({ active, payload, label }) {
-    if (!active || !payload?.length) return null;
-
-    const sortedPayload = sortTooltipPayload(payload);
-
-    return (
-        <div className="inequality-gap-tooltip">
-            <strong>{label}</strong>
-            {sortedPayload.map(({ dataKey, value }) => {
-                return (
-                    <span key={dataKey} style={{ color: COLORS[dataKey] }}>
-                        {dataKey}: {formatLossPercentage(value)}
-                    </span>
-                );
-            })}
-        </div>
-    );
-}
+import { COLORS, COUNTRIES, formatLossPercentage } from "./chartConstants";
 
 function InequalityGapChart({ inequalityGap }) {
-    const chartData = pivotInequalityGap(inequalityGap);
+    const chartData = pivotByYear(inequalityGap, "loss_pct");
 
     return (
         <>
-            <div className="inequality-gap-chart">
+            <div className="trend-chart">
                 <ResponsiveContainer width="100%" height={400}>
                     <LineChart data={chartData} margin={{ top: 12, right: 20, bottom: 12, left: 64 }}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -53,7 +26,7 @@ function InequalityGapChart({ inequalityGap }) {
                         <YAxis>
                             <Label value="% of HDI lost to inequality" angle={-90} position="insideLeft" />
                         </YAxis>
-                        <Tooltip content={<InequalityGapTooltip />} formatter={formatLossPercentage} filterNull={false} />
+                        <Tooltip content={<TrendTooltip format={formatLossPercentage} />} filterNull={false} />
                         <Legend itemSorter={null} />
                         {COUNTRIES.map((country) => (
                             <Line
@@ -62,6 +35,7 @@ function InequalityGapChart({ inequalityGap }) {
                                 dataKey={country}
                                 stroke={COLORS[country]}
                                 dot={false}
+                                isAnimationActive={false}
                             />
                         ))}
                     </LineChart>

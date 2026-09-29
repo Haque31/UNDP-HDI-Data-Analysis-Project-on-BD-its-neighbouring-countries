@@ -16,14 +16,6 @@
     line-height: 125%;
 }
 
-.components-chart-tooltip {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 8px 10px;
-    border: 1px solid #d1d5db;
-    background: #fff;
-}
 
 @media (max-width: 700px) {
     .components-chart-grid {

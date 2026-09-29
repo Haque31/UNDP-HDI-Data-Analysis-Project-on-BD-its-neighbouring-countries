@@ -1,13 +1,13 @@
 {
   "name": "undp-hdi-data-analysis-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "UNDP HDR 2025 dashboard comparing human development in Bangladesh, India, Pakistan and China.",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm --prefix client run dev\"",
-    "build": "npm install --prefix client --include=dev && npm run build --prefix client",
+    "build": "npm run build --prefix client",
     "server": "node server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npm --prefix client run lint",
+    "clean:data": "python scripts/clean_data.py"
   },
   "repository": {
     "type": "git",
