@@ -53,6 +53,10 @@ app.get("/api/components", getComponents);
 app.get("/api/inequality-gap", getInequalityGap);
 app.get("/api/gii-trend", getGiiTrend);
 
-app.listen(port, () => {
-    console.log(`Dashboard API listening on port ${port}`);
-});
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Dashboard API listening on port ${port}`);
+    });
+}
+
+module.exports = app;
