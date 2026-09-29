@@ -1,0 +1,12 @@
+.inequality-gap-chart {
+    width: 100%;
+}
+
+.inequality-gap-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+}

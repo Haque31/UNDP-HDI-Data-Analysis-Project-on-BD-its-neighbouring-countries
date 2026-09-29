@@ -54,16 +54,55 @@ body {
   margin: 0;
 }
 
+.recharts-wrapper :focus:not(:focus-visible) {
+  outline: none;
+}
+
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 48px 32px 64px;
+  text-align: left;
+}
+
+.dashboard-header {
+  margin-bottom: 48px;
+}
+
+.dashboard-header h1 {
+  max-width: 900px;
+  margin: 0 0 12px;
+  font-size: 40px;
+  line-height: 112%;
+}
+
+.dashboard-header p {
+  color: var(--text);
+}
+
+.dashboard section {
+  margin-top: 40px;
+}
+
+.dashboard section h2 {
+  margin-bottom: 16px;
+}
+
+.section-message {
+  min-height: 400px;
+  display: grid;
+  place-items: center;
+  color: var(--text);
 }
 
 h1,
@@ -77,20 +116,38 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 32px 16px 48px;
+  }
+
+  .dashboard-header {
+    margin-bottom: 32px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 32px;
+  }
+}
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
 p {
   margin: 0;
 }
