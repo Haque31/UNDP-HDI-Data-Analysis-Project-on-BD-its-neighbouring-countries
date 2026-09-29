@@ -44,7 +44,12 @@ The metadata XLSX is supporting evidence, not a runtime dependency. Keep it: it 
 | `api/index.js`, `api/[...path].js` | Small deployment adapters exporting the same app. The latter handles nested API paths. |
 | `client/index.html` | HTML shell, page title and description, module entry. |
 | `client/src/main.jsx` | Mount React at `#root`, enable development StrictMode. |
-| `client/src/App.jsx` | Start requests, hold independent data/loading/error states, render four sections. |
+| `client/src/App.jsx` | Start requests, hold independent data/loading/error states and switch Full/Compact views. |
+| `client/src/components/CompactView.jsx` | Two selectors, metric-specific axes/captions through reused charts, and matching briefs. |
+| `client/src/components/InsightPanel.jsx` | Static trend narratives and component comparisons derived from loaded data. |
+| `client/src/components/componentMetrics.js` | Shared component names, units and captions for charts/selectors. |
+| `client/public/favicon.svg` | Original decorative chart icon using the country palette. |
+| `tests/dashboard.test.mjs` | Node tests for data coverage, gaps, calculations, tooltip behavior and local HTTP routes. |
 | `client/src/api.js` | Shared fetch/status/JSON handling and four named request functions. |
 | `client/src/components/chartData.js` | Convert long records to one row per year. |
 | `client/src/components/chartConstants.js` | Country order, colors, tooltip ordering and number formatting. |
@@ -136,6 +141,16 @@ Functional updates such as `setLoading(current => ({ ...current, [key]: false })
 
 Keeping ordinary React state fits four fixed sections. A global store or server-state library would add dependencies and concepts without much current benefit. Reconsider a query library if filters, caching, pagination or repeated views appear.
 
+### Full and Compact views
+
+`App` keeps the fetched data while changing views, so toggling does not refetch it. Full view retains the header and four chart sections. `CompactView` has exactly two sections and local state for the trend and component selectors. It starts at HDI/life expectancy; unmounting it by returning to Full view resets those choices on the next visit.
+
+Compact view reuses the existing chart components. This preserves independent x-axis domains (HDI 1970?2023, GII 1990?2023, loss 2010?2023), null values, and HDI-only markers. HDI and GII accept `showAxisLabel`; the inequality chart already labels its percentage axis. `ComponentsChart` accepts an optional `selectedMetric`: absent means all four panels, present means one zero-based chart with its units and caption.
+
+`InsightPanel` receives an indicator and optionally the component dataset and selected metric. Trend text is authored from the verified facts supplied for this project; component numbers use the loaded snapshot and shared formatters. There is no AI request. When updating the source release, review the authored text as well as the numerical values: a dynamically formatted number does not automatically update a written comparison such as "below India".
+
+The shared `.chart-with-insight` grid puts the brief beside the chart above 1000px and below it at smaller widths. Loading/error handling wraps chart and brief together, avoiding an apparently successful brief beside a failed request.
+
 ## 7. How the charts work
 
 `pivotByYear(records, metric)` uses a `Map` keyed by year. A row such as `{year: 2023, BGD: 0.685, IND: 0.685, ...}` lets each Recharts `Line` read its country's field. Sorting numerically prevents source order from affecting the timeline. Nulls survive the pivot. Duplicate country/year input would overwrite an earlier value; the generated contract assumes uniqueness.
@@ -153,9 +168,9 @@ The shared tooltip accepts a formatting function. HDI/GII use three decimals, pe
 | Inequality loss | Percentage trend; source `loss_pct` | Shows relative loss rather than the absolute HDI–IHDI difference. |
 | GII | Lines with y-axis starting at zero | Lower values are better; missing early China observations stay missing. |
 
-Lines use `type="monotone"` for smooth visual paths. This is a rendering choice between observed points, not a model that estimates missing observations. Recharts does not connect null gaps by default. Dots are hidden to reduce clutter, while hover exposes recorded values.
+Lines use `type="monotone"` for smooth visual paths. This is a rendering choice between observed points, not a model that estimates missing observations. Recharts does not connect null gaps by default. Dots are hidden to reduce clutter, while hover exposes recorded values. Chart animations are disabled so selector changes immediately show the recorded values rather than intermediate animated shapes.
 
-The GII note cautions against explaining annual jumps without auditing the underlying input series. An earlier claim attributing jumps to specific inputs was removed because the cleaning code does not verify it. Neither annual jumps nor historical markers establish causal effects.
+The GII note and brief explicitly identify Bangladesh's jumps around 2001?2004 and 2008, and Pakistan's around 2003, as likely data/survey artifacts, following the input-series review supplied by the project owner. The cleaning script does not reproduce that input-series audit. Do not present those jumps as real one-year events or infer causal effects from the historical markers.
 
 ## 8. Why this stack, and when alternatives would help
 
@@ -180,6 +195,7 @@ The CSV, metadata and cleaned JSON are different artifacts with different purpos
 | `npm run dev` | Run Express and Vite together using concurrently. |
 | `npm run server` | Start only the local API. |
 | `npm run lint` | Run the client's configured Oxlint checks. |
+| `npm test` | Run Node regression tests without adding a test-framework dependency. |
 | `npm run build` | Build the already installed client dependencies. |
 | `npm run clean:data` | Regenerate JSON using `python` on PATH; install requirements in that interpreter first. |
 
@@ -227,12 +243,18 @@ The cleanup removes unused starter assets, the unimported `App.css`, starter-onl
 
 Both deployment entry points, raw inputs, generated JSON, lockfiles and linter configuration are intentionally retained. Installed dependencies, local Vercel linkage and generated build output are working artifacts and are not deleted as part of source cleanup.
 
-Lint and build checks do not prove analytical correctness or browser accessibility. Data regeneration should preserve the committed JSON for the same input, and API smoke checks should verify all five endpoints against that JSON. There is currently no committed automated test suite; the old always-failing placeholder test command was removed. Production routing still needs a deployed smoke check, and visual changes should be inspected in a browser at desktop/mobile sizes and in both color themes.
+Lint and build checks do not prove analytical correctness or browser accessibility. Data regeneration should preserve the committed JSON for the same input, and API smoke checks should verify all five endpoints against that JSON. The committed Node regression suite verifies snapshot coverage and uniqueness, preserves the real China gaps through the frontend pivot, crosschecks inequality loss, checks zero/missing tooltip behavior, and exercises all five API endpoints. It does not automate browser interactions or establish statistical validity. Production routing still needs a deployed smoke check, and visual changes should be inspected in a browser at desktop/mobile sizes and in both color themes.
 
 ### Checks completed during this review
 
-- Client lint and production build passed. Vite reported a JavaScript chunk above its 500 kB warning threshold (about 620 kB minified); this is a performance consideration, not a build failure.
+- At the September 2026 checkpoint, all five `npm test` cases, client lint and production build passed. Vite reported a JavaScript chunk above its 500 kB warning threshold (about 629 kB minified / 185 kB gzip); this is a performance consideration, not a build failure.
 - Regeneration produced byte-identical JSON. Counts, country/year coverage and country/year uniqueness passed.
 - Missing values matched the documented China gaps. The maximum absolute inequality-loss difference was approximately `4.99e-9` percentage points.
 - All five API endpoints passed local HTTP smoke checks; the four data responses matched the cleaned JSON. An unknown route returned 404, and both deployment adapters exported the shared app.
-- No deployed Vercel request or browser visual/accessibility audit was performed.
+- Desktop/mobile browser smoke checks covered both views, all seven selector briefs, historical markers, axis domains, responsive placement and dark theme using the production build with the real local API. The built favicon returned HTTP 200 with SVG content and was visually checked at 16, 32, 64 and 112 pixels. Earlier view checks also covered gaps and independent request errors. A comprehensive accessibility audit and a live Vercel check remain outstanding.
+
+### Milestone follow-ups
+
+The viewer README records the September 2026 checkpoint and remaining work. The JavaScript bundle still exceeds Vite's 500 kB warning threshold. No code splitting is claimed here. A future browser-test setup should exercise all seven selector options, brief changes, axis labels/domains, missing intervals and desktop/mobile positioning. An accessible data-table/download view would also make exact values available without relying on chart hover.
+
+The favicon is repo-native SVG, so it needs no image-generation service or build dependency. Vite copies it from `client/public` to the build root; `client/index.html` references `/favicon.svg`. Its bar heights are decorative and do not encode country statistics.

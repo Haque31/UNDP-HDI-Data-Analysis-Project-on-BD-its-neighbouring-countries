@@ -7,6 +7,7 @@
     "build": "npm run build --prefix client",
     "server": "node server/index.js",
     "lint": "npm --prefix client run lint",
+    "test": "node --test tests/dashboard.test.mjs",
     "clean:data": "python scripts/clean_data.py"
   },
   "repository": {
